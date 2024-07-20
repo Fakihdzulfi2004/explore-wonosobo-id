@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bcd55f0a8bfee0c76e8c76e53de80221 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bcd55f0a8bfee0c76e8c76e53de80221" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bcd55f0a8bfee0c76e8c76e53de80221 = L.map(
+                "map_bcd55f0a8bfee0c76e8c76e53de80221",
+                {
+                    center: [-7.365888040443527, 109.89809921487263],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e86cbf98e1327cf081e4b7fd1ea75824 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bcd55f0a8bfee0c76e8c76e53de80221);
+        
+    
+            var heat_map_641afe89a5c7e689080b555c14f63ebb = L.heatLayer(
+                [[-7.238924199, 109.9243492], [-7.21128905, 109.9160499], [-7.195279311, 109.9319286], [-7.214414727, 109.899639], [-7.220094468, 109.9039194], [-7.21749176, 109.9167079], [-7.204911224, 109.9068563], [-7.268043331, 109.9253265], [-7.213744467, 109.9177368], [-7.264867089, 109.9589685]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 15}
+            ).addTo(map_bcd55f0a8bfee0c76e8c76e53de80221);
+        
+    
+            var marker_cluster_2ccbb9a8b4faa7d1212f2037f4e5b6c1 = L.markerClusterGroup(
+                {}
+            );
+            map_bcd55f0a8bfee0c76e8c76e53de80221.addLayer(marker_cluster_2ccbb9a8b4faa7d1212f2037f4e5b6c1);
+        
+    
+            var marker_799e0e5440a704e6d0654c6be3fb1f6f = L.marker(
+                [-7.238924199, 109.9243492],
+                {}
+            ).addTo(marker_cluster_2ccbb9a8b4faa7d1212f2037f4e5b6c1);
+        
+    
+        var popup_77a626dc40b35a67b689a2c060052925 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_796418964e4bb2b53e4be58e4f559664 = $(`<div id="html_796418964e4bb2b53e4be58e4f559664" style="width: 100.0%; height: 100.0%;">bukit sikunir: Sawah & Hutan, Dieng, Kejajar, Wonosobo Regency, Central Java</div>`)[0];
+                popup_77a626dc40b35a67b689a2c060052925.setContent(html_796418964e4bb2b53e4be58e4f559664);
+            
+        
+
+        marker_799e0e5440a704e6d0654c6be3fb1f6f.bindPopup(popup_77a626dc40b35a67b689a2c060052925)
+        ;
+
+        
+    
+    
+            var marker_59513550a43a850ab03c6f65a3080366 = L.marker(
+                [-7.21128905, 109.9160499],
+                {}
+            ).addTo(marker_cluster_2ccbb9a8b4faa7d1212f2037f4e5b6c1);
+        
+    
+        var popup_55df0890fc833308d8c371e881b69659 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3e8dd0f3c189427b1e6a8f760048d65 = $(`<div id="html_a3e8dd0f3c189427b1e6a8f760048d65" style="width: 100.0%; height: 100.0%;">telaga warna: Dieng, Kejajar, Wonosobo Regency, Central Java</div>`)[0];
+                popup_55df0890fc833308d8c371e881b69659.setContent(html_a3e8dd0f3c189427b1e6a8f760048d65);
+            
+        
+
+        marker_59513550a43a850ab03c6f65a3080366.bindPopup(popup_55df0890fc833308d8c371e881b69659)
+        ;
+
+        
+    
+    
+            var marker_27bdbd00ff67e8b5954166305a349341 = L.marker(
+                [-7.195279311, 109.9319286],
+                {}
+            ).addTo(marker_cluster_2ccbb9a8b4faa7d1212f2037f4e5b6c1);
+        
+    
+        var popup_bed49a78f8c9cbdc956bb294f94bde09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5baa84c4cf0850c4961cf5190a9df73 = $(`<div id="html_e5baa84c4cf0850c4961cf5190a9df73" style="width: 100.0%; height: 100.0%;">gunung prau: RT.13/RW.06, Patakbanteng, Kejajar, Wonosobo Regency, Central Java 56354</div>`)[0];
+                popup_bed49a78f8c9cbdc956bb294f94bde09.setContent(html_e5baa84c4cf0850c4961cf5190a9df73);
+            
+        
+
+        marker_27bdbd00ff67e8b5954166305a349341.bindPopup(popup_bed49a78f8c9cbdc956bb294f94bde09)
+        ;
+
+        
+    
+    
+            var marker_d2390802931887ac7398b15ff31155fc = L.marker(
+                [-7.214414727, 109.899639],
+                {}
+            ).addTo(marker_cluster_2ccbb9a8b4faa7d1212f2037f4e5b6c1);
+        
+    
+        var popup_af4765bad0b06b66cbe6b091ca48686f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acd742af373c71fab094789be9f98dd4 = $(`<div id="html_acd742af373c71fab094789be9f98dd4" style="width: 100.0%; height: 100.0%;">dieng plaeteu: Bakal Buntu, Bakal, Batur, Banjarnegara, Central Java</div>`)[0];
+                popup_af4765bad0b06b66cbe6b091ca48686f.setContent(html_acd742af373c71fab094789be9f98dd4);
+            
+        
+
+        marker_d2390802931887ac7398b15ff31155fc.bindPopup(popup_af4765bad0b06b66cbe6b091ca48686f)
+        ;
+
+        
+    
+    
+            var marker_e21dc6af3a8bd23808fa3712ea04889d = L.marker(
+                [-7.220094468, 109.9039194],
+                {}
+            ).addTo(marker_cluster_2ccbb9a8b4faa7d1212f2037f4e5b6c1);
+        
+    
+        var popup_33cf335bfad000966b65b16425122e63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_853568adb2e884a03be5600057d139c4 = $(`<div id="html_853568adb2e884a03be5600057d139c4" style="width: 100.0%; height: 100.0%;">kawah sikidang:   Bakal Buntu, Dieng Kulon, Kec. Batur, Kab. Banjarnegara, Jawa Tengah 53456</div>`)[0];
+                popup_33cf335bfad000966b65b16425122e63.setContent(html_853568adb2e884a03be5600057d139c4);
+            
+        
+
+        marker_e21dc6af3a8bd23808fa3712ea04889d.bindPopup(popup_33cf335bfad000966b65b16425122e63)
+        ;
+
+        
+    
+    
+            var marker_faf62c6bb945d81099d3fb583ad23a34 = L.marker(
+                [-7.21749176, 109.9167079],
+                {}
+            ).addTo(marker_cluster_2ccbb9a8b4faa7d1212f2037f4e5b6c1);
+        
+    
+        var popup_a9875022f76e08c1384a9414d671a44a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c57647ac1f7efb2dc8f60336c93384b = $(`<div id="html_7c57647ac1f7efb2dc8f60336c93384b" style="width: 100.0%; height: 100.0%;">batu ratapan angin: Theater, Jl. Dieng KM.2, Dieng, Kec. Kejajar, Kabupaten Wonosobo, Jawa Tengah 56354</div>`)[0];
+                popup_a9875022f76e08c1384a9414d671a44a.setContent(html_7c57647ac1f7efb2dc8f60336c93384b);
+            
+        
+
+        marker_faf62c6bb945d81099d3fb583ad23a34.bindPopup(popup_a9875022f76e08c1384a9414d671a44a)
+        ;
+
+        
+    
+    
+            var marker_a8574798869ae88635dfbe7c16d67302 = L.marker(
+                [-7.204911224, 109.9068563],
+                {}
+            ).addTo(marker_cluster_2ccbb9a8b4faa7d1212f2037f4e5b6c1);
+        
+    
+        var popup_f88607e56f16cbdfc4ef6526a9b98780 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75e5638fbb6479d000a0a054dcb3bbed = $(`<div id="html_75e5638fbb6479d000a0a054dcb3bbed" style="width: 100.0%; height: 100.0%;">candi arjuna: Karangsari, Dieng Kulon, Batur, Banjarnegara, Central Java 53456</div>`)[0];
+                popup_f88607e56f16cbdfc4ef6526a9b98780.setContent(html_75e5638fbb6479d000a0a054dcb3bbed);
+            
+        
+
+        marker_a8574798869ae88635dfbe7c16d67302.bindPopup(popup_f88607e56f16cbdfc4ef6526a9b98780)
+        ;
+
+        
+    
+    
+            var marker_33c60b3ddf64dc965cbcb4927c5c920c = L.marker(
+                [-7.268043331, 109.9253265],
+                {}
+            ).addTo(marker_cluster_2ccbb9a8b4faa7d1212f2037f4e5b6c1);
+        
+    
+        var popup_d777dcb758f63c25f9b037ac983e903b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b97e225d46af3f5e598403914e88f7d = $(`<div id="html_5b97e225d46af3f5e598403914e88f7d" style="width: 100.0%; height: 100.0%;">telaga menjer: Garung, Wonosobo Regency, Central Java</div>`)[0];
+                popup_d777dcb758f63c25f9b037ac983e903b.setContent(html_5b97e225d46af3f5e598403914e88f7d);
+            
+        
+
+        marker_33c60b3ddf64dc965cbcb4927c5c920c.bindPopup(popup_d777dcb758f63c25f9b037ac983e903b)
+        ;
+
+        
+    
+    
+            var marker_4da6e612f3633dcbadd146eb4718c9d0 = L.marker(
+                [-7.213744467, 109.9177368],
+                {}
+            ).addTo(marker_cluster_2ccbb9a8b4faa7d1212f2037f4e5b6c1);
+        
+    
+        var popup_23f06f11487e02d8a5e63e08e1505d77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32f964ee92f50dfc12668bc1d4b6cec5 = $(`<div id="html_32f964ee92f50dfc12668bc1d4b6cec5" style="width: 100.0%; height: 100.0%;">telaga pangilon: Dieng, Kejajar, Wonosobo Regency, Central Java</div>`)[0];
+                popup_23f06f11487e02d8a5e63e08e1505d77.setContent(html_32f964ee92f50dfc12668bc1d4b6cec5);
+            
+        
+
+        marker_4da6e612f3633dcbadd146eb4718c9d0.bindPopup(popup_23f06f11487e02d8a5e63e08e1505d77)
+        ;
+
+        
+    
+    
+            var marker_08283811ba04542e93c144440048029c = L.marker(
+                [-7.264867089, 109.9589685],
+                {}
+            ).addTo(marker_cluster_2ccbb9a8b4faa7d1212f2037f4e5b6c1);
+        
+    
+        var popup_17b91fd0fbe585f5ff8596a9b3020460 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7aaa370ab582552e245f2aec906073b6 = $(`<div id="html_7aaa370ab582552e245f2aec906073b6" style="width: 100.0%; height: 100.0%;">kebun the tambi:   Tlogomulyo, Kec. Kertek, Kabupaten Wonosobo, Jawa Tengah 56371</div>`)[0];
+                popup_17b91fd0fbe585f5ff8596a9b3020460.setContent(html_7aaa370ab582552e245f2aec906073b6);
+            
+        
+
+        marker_08283811ba04542e93c144440048029c.bindPopup(popup_17b91fd0fbe585f5ff8596a9b3020460)
+        ;
+
+        
+    
+</script>
+</html>

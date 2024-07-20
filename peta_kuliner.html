@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7112e6dbd79420948a68de1f4adfc215 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7112e6dbd79420948a68de1f4adfc215" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7112e6dbd79420948a68de1f4adfc215 = L.map(
+                "map_7112e6dbd79420948a68de1f4adfc215",
+                {
+                    center: [-7.361972393513237, 109.9156086760408],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3d586ef2d445734c40e5d8de415ec6ad = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7112e6dbd79420948a68de1f4adfc215);
+        
+    
+            var heat_map_aa8a2c00cca3ea93420811226f6f825a = L.heatLayer(
+                [[-7.35345614, 109.905504], [-7.351218776, 110.0106114], [-7.366099285, 109.9012837], [-7.361768922, 109.902036], [-7.351371098, 109.905756], [-7.353303157, 109.90483], [-7.347011781, 109.9069743], [-7.370398529, 109.9008607]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 15}
+            ).addTo(map_7112e6dbd79420948a68de1f4adfc215);
+        
+    
+            var marker_cluster_baf37ab0ca37077aaaec16defbf305fa = L.markerClusterGroup(
+                {}
+            );
+            map_7112e6dbd79420948a68de1f4adfc215.addLayer(marker_cluster_baf37ab0ca37077aaaec16defbf305fa);
+        
+    
+            var marker_26d17779aa139ff2bb188f23cf1a1b78 = L.marker(
+                [-7.35345614, 109.905504],
+                {}
+            ).addTo(marker_cluster_baf37ab0ca37077aaaec16defbf305fa);
+        
+    
+        var popup_2fdfab02b011bcefdf8d372968f13c01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_363a8d18b74e1c7545898c2dd5f6b33a = $(`<div id="html_363a8d18b74e1c7545898c2dd5f6b33a" style="width: 100.0%; height: 100.0%;">Mie Ongklok Longkrang: Longkrang, Jl. Pasukan Ronggolawe No.14, Wonosobo Tim., Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56311</div>`)[0];
+                popup_2fdfab02b011bcefdf8d372968f13c01.setContent(html_363a8d18b74e1c7545898c2dd5f6b33a);
+            
+        
+
+        marker_26d17779aa139ff2bb188f23cf1a1b78.bindPopup(popup_2fdfab02b011bcefdf8d372968f13c01)
+        ;
+
+        
+    
+    
+            var marker_2a6b10f321c00ce32ea5991d21b684ea = L.marker(
+                [-7.351218776, 110.0106114],
+                {}
+            ).addTo(marker_cluster_baf37ab0ca37077aaaec16defbf305fa);
+        
+    
+        var popup_4c05dcd592e1c05466c5fe57350bb939 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63ec11ef37a54e20abfbe1cd59e8502e = $(`<div id="html_63ec11ef37a54e20abfbe1cd59e8502e" style="width: 100.0%; height: 100.0%;">Waroeng Djoglo:   Kapencar, Kec. Kertek, Kabupaten Wonosobo, Jawa Tengah 56371</div>`)[0];
+                popup_4c05dcd592e1c05466c5fe57350bb939.setContent(html_63ec11ef37a54e20abfbe1cd59e8502e);
+            
+        
+
+        marker_2a6b10f321c00ce32ea5991d21b684ea.bindPopup(popup_4c05dcd592e1c05466c5fe57350bb939)
+        ;
+
+        
+    
+    
+            var marker_bd4c741c4e3eb350563f20d58b576c5a = L.marker(
+                [-7.366099285, 109.9012837],
+                {}
+            ).addTo(marker_cluster_baf37ab0ca37077aaaec16defbf305fa);
+        
+    
+        var popup_257fa5038c0a985251ef6f37369ed1fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09b2f98e4da4d0fd0a8e15481ce5d712 = $(`<div id="html_09b2f98e4da4d0fd0a8e15481ce5d712" style="width: 100.0%; height: 100.0%;">Soto Sapi Khas Wonosobo EDS: Jl. A. Yani No.118, Ngepelan, Wonosobo Bar., Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56311</div>`)[0];
+                popup_257fa5038c0a985251ef6f37369ed1fb.setContent(html_09b2f98e4da4d0fd0a8e15481ce5d712);
+            
+        
+
+        marker_bd4c741c4e3eb350563f20d58b576c5a.bindPopup(popup_257fa5038c0a985251ef6f37369ed1fb)
+        ;
+
+        
+    
+    
+            var marker_30f8af0fa5847a3a1e481399b43fb7b0 = L.marker(
+                [-7.361768922, 109.902036],
+                {}
+            ).addTo(marker_cluster_baf37ab0ca37077aaaec16defbf305fa);
+        
+    
+        var popup_d1623cdd1e7df145c508b43422573e03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba552c08a53b3b09b5b3e6e7c91cb8f2 = $(`<div id="html_ba552c08a53b3b09b5b3e6e7c91cb8f2" style="width: 100.0%; height: 100.0%;">asian restaurant : Jl. Angkatan 45 No.43, RT.04/RW.07, Wonosobo Timur, Wonosobo Tim., Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56311</div>`)[0];
+                popup_d1623cdd1e7df145c508b43422573e03.setContent(html_ba552c08a53b3b09b5b3e6e7c91cb8f2);
+            
+        
+
+        marker_30f8af0fa5847a3a1e481399b43fb7b0.bindPopup(popup_d1623cdd1e7df145c508b43422573e03)
+        ;
+
+        
+    
+    
+            var marker_6a8851549cac0b54ee8dcee338a638e2 = L.marker(
+                [-7.351371098, 109.905756],
+                {}
+            ).addTo(marker_cluster_baf37ab0ca37077aaaec16defbf305fa);
+        
+    
+        var popup_6e29d01f24d05c021517c3f370cfa185 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42fc9d289953f0673e8ff453687937c0 = $(`<div id="html_42fc9d289953f0673e8ff453687937c0" style="width: 100.0%; height: 100.0%;">GH CORNER Wonosobo Restoran: Jl. Dieng No.13 (Jl. Pangeran Diponegoro Ruko Puri Niaga No.4, Wonosobo Timur,Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56317</div>`)[0];
+                popup_6e29d01f24d05c021517c3f370cfa185.setContent(html_42fc9d289953f0673e8ff453687937c0);
+            
+        
+
+        marker_6a8851549cac0b54ee8dcee338a638e2.bindPopup(popup_6e29d01f24d05c021517c3f370cfa185)
+        ;
+
+        
+    
+    
+            var marker_aa18a196252b5bf7ec41da7d23c5731e = L.marker(
+                [-7.353303157, 109.90483],
+                {}
+            ).addTo(marker_cluster_baf37ab0ca37077aaaec16defbf305fa);
+        
+    
+        var popup_d6f36503e84642f0a43503ff570c0fec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d9c271b7b8340775031f67640469845 = $(`<div id="html_2d9c271b7b8340775031f67640469845" style="width: 100.0%; height: 100.0%;">Krishna Resto Garden: Jl. Kyai Mansyur No.100, Wonosobo Timur, Wonosobo Tim., Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56311</div>`)[0];
+                popup_d6f36503e84642f0a43503ff570c0fec.setContent(html_2d9c271b7b8340775031f67640469845);
+            
+        
+
+        marker_aa18a196252b5bf7ec41da7d23c5731e.bindPopup(popup_d6f36503e84642f0a43503ff570c0fec)
+        ;
+
+        
+    
+    
+            var marker_28b555f71c38021c0fe4cafc1426ad45 = L.marker(
+                [-7.347011781, 109.9069743],
+                {}
+            ).addTo(marker_cluster_baf37ab0ca37077aaaec16defbf305fa);
+        
+    
+        var popup_8a9e4bfce98d8d68f5532f5b6a5469de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_403e2805fc1a72acfc02ff44eb8109e0 = $(`<div id="html_403e2805fc1a72acfc02ff44eb8109e0" style="width: 100.0%; height: 100.0%;">Resto Ongklok: MW34+4R4, Jalan Dieng, Kalianget, Wonosobo, Argopeni, Kalianget, Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56319</div>`)[0];
+                popup_8a9e4bfce98d8d68f5532f5b6a5469de.setContent(html_403e2805fc1a72acfc02ff44eb8109e0);
+            
+        
+
+        marker_28b555f71c38021c0fe4cafc1426ad45.bindPopup(popup_8a9e4bfce98d8d68f5532f5b6a5469de)
+        ;
+
+        
+    
+    
+            var marker_52d42fa9547aa26eb23a1205b0262bb9 = L.marker(
+                [-7.370398529, 109.9008607],
+                {}
+            ).addTo(marker_cluster_baf37ab0ca37077aaaec16defbf305fa);
+        
+    
+        var popup_30731c5ba24be675eb79f40552945d48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39d2685e8a653d95490a507a50c54540 = $(`<div id="html_39d2685e8a653d95490a507a50c54540" style="width: 100.0%; height: 100.0%;">Lesehan Hoki: Jl. A. Yani No.179, Wonosobo Timur, Wonosobo Tim., Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56311</div>`)[0];
+                popup_30731c5ba24be675eb79f40552945d48.setContent(html_39d2685e8a653d95490a507a50c54540);
+            
+        
+
+        marker_52d42fa9547aa26eb23a1205b0262bb9.bindPopup(popup_30731c5ba24be675eb79f40552945d48)
+        ;
+
+        
+    
+</script>
+</html>

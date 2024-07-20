@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9322447f8d94ad1d773fbb5965e8e063 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9322447f8d94ad1d773fbb5965e8e063" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9322447f8d94ad1d773fbb5965e8e063 = L.map(
+                "map_9322447f8d94ad1d773fbb5965e8e063",
+                {
+                    center: [-7.364355830142679, 109.91131740971285],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8cb232b5dbda4051e58feb6b7956c52b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9322447f8d94ad1d773fbb5965e8e063);
+        
+    
+            var heat_map_f3b0f28dec41baece1d5e7fcf3693b96 = L.heatLayer(
+                [[-7.362398379, 109.901837], [-7.374996412, 109.9016653], [-7.359332997, 109.9120508], [-7.350820551, 109.9056135], [-7.35984468, 109.903339], [-7.360355421, 109.9005924], [-7.362653748, 109.9001633], [-7.350247353, 109.9055268], [-7.364566862, 109.9013715], [-7.361331249, 109.9020581], [-7.359615925, 109.8997748]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 15}
+            ).addTo(map_9322447f8d94ad1d773fbb5965e8e063);
+        
+    
+            var marker_cluster_d34a1ad2e8267b8a50e349f00ed5fcfa = L.markerClusterGroup(
+                {}
+            );
+            map_9322447f8d94ad1d773fbb5965e8e063.addLayer(marker_cluster_d34a1ad2e8267b8a50e349f00ed5fcfa);
+        
+    
+            var marker_7aaf7da93c7bcdabb6cf8ce8c03edfa3 = L.marker(
+                [-7.362398379, 109.901837],
+                {}
+            ).addTo(marker_cluster_d34a1ad2e8267b8a50e349f00ed5fcfa);
+        
+    
+        var popup_e36f7d255600a6994e45ca187c4eba3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4937e41772e835ef892a32afe0cb9002 = $(`<div id="html_4937e41772e835ef892a32afe0cb9002" style="width: 100.0%; height: 100.0%;">Rita Pasaraya:Komplek Plaza Raya, Jl. A. Yani No.40, Wonosobo Tim., Kabupaten Wonosobo, Jawa Tengah 56311</div>`)[0];
+                popup_e36f7d255600a6994e45ca187c4eba3c.setContent(html_4937e41772e835ef892a32afe0cb9002);
+            
+        
+
+        marker_7aaf7da93c7bcdabb6cf8ce8c03edfa3.bindPopup(popup_e36f7d255600a6994e45ca187c4eba3c)
+        ;
+
+        
+    
+    
+            var marker_449f2b42d5af75807d66d86b3e4afb69 = L.marker(
+                [-7.374996412, 109.9016653],
+                {}
+            ).addTo(marker_cluster_d34a1ad2e8267b8a50e349f00ed5fcfa);
+        
+    
+        var popup_186a8282af6e574b54fe48a74b79d657 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1eaeccd02a0b43ca12724137976c076 = $(`<div id="html_c1eaeccd02a0b43ca12724137976c076" style="width: 100.0%; height: 100.0%;">Chanitha Store:JWF2+HJ4, Jl. A. Yani, Singkir, Jaraksari, Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56314</div>`)[0];
+                popup_186a8282af6e574b54fe48a74b79d657.setContent(html_c1eaeccd02a0b43ca12724137976c076);
+            
+        
+
+        marker_449f2b42d5af75807d66d86b3e4afb69.bindPopup(popup_186a8282af6e574b54fe48a74b79d657)
+        ;
+
+        
+    
+    
+            var marker_a882d60113514f73fabf23214eb0944c = L.marker(
+                [-7.359332997, 109.9120508],
+                {}
+            ).addTo(marker_cluster_d34a1ad2e8267b8a50e349f00ed5fcfa);
+        
+    
+        var popup_2520abe63bcc393eb0b1e42b23a8a9ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e70b8fc952e48743d6c13afbe0bab223 = $(`<div id="html_e70b8fc952e48743d6c13afbe0bab223" style="width: 100.0%; height: 100.0%;">TOKO OLEH OLEH SR SIDOJOYO: Jl. Mayjend. Bambang Sugeng, Tembelang, Rojoimo, Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56314</div>`)[0];
+                popup_2520abe63bcc393eb0b1e42b23a8a9ac.setContent(html_e70b8fc952e48743d6c13afbe0bab223);
+            
+        
+
+        marker_a882d60113514f73fabf23214eb0944c.bindPopup(popup_2520abe63bcc393eb0b1e42b23a8a9ac)
+        ;
+
+        
+    
+    
+            var marker_f0f309d10c46d388e442d2ac1c91169e = L.marker(
+                [-7.350820551, 109.9056135],
+                {}
+            ).addTo(marker_cluster_d34a1ad2e8267b8a50e349f00ed5fcfa);
+        
+    
+        var popup_cc39857ab619f8be4473b15250993523 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_664c92b477ea07865904ea9dc2ec6d9a = $(`<div id="html_664c92b477ea07865904ea9dc2ec6d9a" style="width: 100.0%; height: 100.0%;">CONSINA STORE WONOSOBO:Jl. Pangeran Diponegoro, Wonosobo Timur, Wonosobo Tim., Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56317</div>`)[0];
+                popup_cc39857ab619f8be4473b15250993523.setContent(html_664c92b477ea07865904ea9dc2ec6d9a);
+            
+        
+
+        marker_f0f309d10c46d388e442d2ac1c91169e.bindPopup(popup_cc39857ab619f8be4473b15250993523)
+        ;
+
+        
+    
+    
+            var marker_3f71ae2b15be1463f5ee794595d76224 = L.marker(
+                [-7.35984468, 109.903339],
+                {}
+            ).addTo(marker_cluster_d34a1ad2e8267b8a50e349f00ed5fcfa);
+        
+    
+        var popup_ad44c3157f7fd776c492de4777352a5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45f4ff3972cf82e458006a4243f38b41 = $(`<div id="html_45f4ff3972cf82e458006a4243f38b41" style="width: 100.0%; height: 100.0%;">Female ACC Wonosobo:Jl. Angkatan 45 No.22-12, Wonosobo Timur, Wonosobo Tim., Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56311</div>`)[0];
+                popup_ad44c3157f7fd776c492de4777352a5a.setContent(html_45f4ff3972cf82e458006a4243f38b41);
+            
+        
+
+        marker_3f71ae2b15be1463f5ee794595d76224.bindPopup(popup_ad44c3157f7fd776c492de4777352a5a)
+        ;
+
+        
+    
+    
+            var marker_bf4c1671e54e2722268490a08c8aff2d = L.marker(
+                [-7.360355421, 109.9005924],
+                {}
+            ).addTo(marker_cluster_d34a1ad2e8267b8a50e349f00ed5fcfa);
+        
+    
+        var popup_094174f4981f542d71286ca787eba0b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da5c074c0a66cb3c2dc479870b4bcdda = $(`<div id="html_da5c074c0a66cb3c2dc479870b4bcdda" style="width: 100.0%; height: 100.0%;">Miki Shop:Jl. Resimen 18 No.33, Sumberan Barat, Wonosobo Bar., Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56311</div>`)[0];
+                popup_094174f4981f542d71286ca787eba0b5.setContent(html_da5c074c0a66cb3c2dc479870b4bcdda);
+            
+        
+
+        marker_bf4c1671e54e2722268490a08c8aff2d.bindPopup(popup_094174f4981f542d71286ca787eba0b5)
+        ;
+
+        
+    
+    
+            var marker_3bb6d4f0e5474cacda5f315d2e4e54a9 = L.marker(
+                [-7.362653748, 109.9001633],
+                {}
+            ).addTo(marker_cluster_d34a1ad2e8267b8a50e349f00ed5fcfa);
+        
+    
+        var popup_5f6f4e86342f813ff6cce33e58c85364 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_509777bd78ac25fb400a81314ad67050 = $(`<div id="html_509777bd78ac25fb400a81314ad67050" style="width: 100.0%; height: 100.0%;">PLANET KIDS:JWP2+878, Sumberan Selatan, West Wonosobo, Wonosobo, Wonosobo Regency, Central Java 56311</div>`)[0];
+                popup_5f6f4e86342f813ff6cce33e58c85364.setContent(html_509777bd78ac25fb400a81314ad67050);
+            
+        
+
+        marker_3bb6d4f0e5474cacda5f315d2e4e54a9.bindPopup(popup_5f6f4e86342f813ff6cce33e58c85364)
+        ;
+
+        
+    
+    
+            var marker_b5cfcd9467b2b047fc6904be25a30091 = L.marker(
+                [-7.350247353, 109.9055268],
+                {}
+            ).addTo(marker_cluster_d34a1ad2e8267b8a50e349f00ed5fcfa);
+        
+    
+        var popup_443f65aab51a564ebc301f34257e0dc4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b91a6418a2ad0aca4086c727d5ea8ea9 = $(`<div id="html_b91a6418a2ad0aca4086c727d5ea8ea9" style="width: 100.0%; height: 100.0%;">AREI STORE WONOSOBO:Jl. Pangeran Diponegoro No.9-11, Wonosobo Timur, Wonosobo Tim., Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56311</div>`)[0];
+                popup_443f65aab51a564ebc301f34257e0dc4.setContent(html_b91a6418a2ad0aca4086c727d5ea8ea9);
+            
+        
+
+        marker_b5cfcd9467b2b047fc6904be25a30091.bindPopup(popup_443f65aab51a564ebc301f34257e0dc4)
+        ;
+
+        
+    
+    
+            var marker_60f50e9da94a9aaff2fa891ef6ace3d5 = L.marker(
+                [-7.364566862, 109.9013715],
+                {}
+            ).addTo(marker_cluster_d34a1ad2e8267b8a50e349f00ed5fcfa);
+        
+    
+        var popup_94ccb79c751684c4345e18e87716d084 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf2676ee2e20fba4e51d4c8e42f23e81 = $(`<div id="html_bf2676ee2e20fba4e51d4c8e42f23e81" style="width: 100.0%; height: 100.0%;">TRIO WONOSOBO:Jl. A. Yani No.112, Ngepelan, Wonosobo Bar., Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56311</div>`)[0];
+                popup_94ccb79c751684c4345e18e87716d084.setContent(html_bf2676ee2e20fba4e51d4c8e42f23e81);
+            
+        
+
+        marker_60f50e9da94a9aaff2fa891ef6ace3d5.bindPopup(popup_94ccb79c751684c4345e18e87716d084)
+        ;
+
+        
+    
+    
+            var marker_41d71f1bad718011da0ba9e19e9a6fac = L.marker(
+                [-7.361331249, 109.9020581],
+                {}
+            ).addTo(marker_cluster_d34a1ad2e8267b8a50e349f00ed5fcfa);
+        
+    
+        var popup_a59a82c07789ecead763a2f7e0939b67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04a3f599cb91c9505dd830bedc053aac = $(`<div id="html_04a3f599cb91c9505dd830bedc053aac" style="width: 100.0%; height: 100.0%;">Wonosobo Plaza:JWP2+QW2, Wonosobo Timur, East Wonosobo, Wonosobo, Wonosobo Regency, Central Java 53103</div>`)[0];
+                popup_a59a82c07789ecead763a2f7e0939b67.setContent(html_04a3f599cb91c9505dd830bedc053aac);
+            
+        
+
+        marker_41d71f1bad718011da0ba9e19e9a6fac.bindPopup(popup_a59a82c07789ecead763a2f7e0939b67)
+        ;
+
+        
+    
+    
+            var marker_9fbf30159f479a21ce3bf3c24a6d7f90 = L.marker(
+                [-7.359615925, 109.8997748],
+                {}
+            ).addTo(marker_cluster_d34a1ad2e8267b8a50e349f00ed5fcfa);
+        
+    
+        var popup_e75009bf0e5e35f7f4a680f63b32051d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_664c097398cd3187a8d5f6a8914ac2f1 = $(`<div id="html_664c097398cd3187a8d5f6a8914ac2f1" style="width: 100.0%; height: 100.0%;">Pasar wonosobo:Jl. Serayu No.2, Wonosobo Timur, Wonosobo Tim., Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56311</div>`)[0];
+                popup_e75009bf0e5e35f7f4a680f63b32051d.setContent(html_664c097398cd3187a8d5f6a8914ac2f1);
+            
+        
+
+        marker_9fbf30159f479a21ce3bf3c24a6d7f90.bindPopup(popup_e75009bf0e5e35f7f4a680f63b32051d)
+        ;
+
+        
+    
+</script>
+</html>

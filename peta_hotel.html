@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0a4bdc210f0ab6b37c736e8403c93e7b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0a4bdc210f0ab6b37c736e8403c93e7b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0a4bdc210f0ab6b37c736e8403c93e7b = L.map(
+                "map_0a4bdc210f0ab6b37c736e8403c93e7b",
+                {
+                    center: [-7.361972393513237, 109.9156086760408],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d0c2c7e335bf3c03bd685582e644e138 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0a4bdc210f0ab6b37c736e8403c93e7b);
+        
+    
+            var heat_map_72991890ffaa829ea65c29e346c98fa9 = L.heatLayer(
+                [[-7.35536614, 109.9051099], [-7.364671954, 109.9015047], [-7.357190348, 109.9045085], [-7.348869506, 109.906676], [-7.365770674, 109.9013962], [-7.367356076, 109.9013104], [-7.366632537, 109.9024798], [-7.364481094, 109.9021197], [-7.366587875, 109.9002636], [-7.35167457, 109.9056094], [-7.368069634, 109.9011885], [-7.393676707, 109.8922966], [-7.366843634, 109.9196306]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 15}
+            ).addTo(map_0a4bdc210f0ab6b37c736e8403c93e7b);
+        
+    
+            var marker_cluster_b8358a9f0516ade52e54581412497225 = L.markerClusterGroup(
+                {}
+            );
+            map_0a4bdc210f0ab6b37c736e8403c93e7b.addLayer(marker_cluster_b8358a9f0516ade52e54581412497225);
+        
+    
+            var marker_00efe43f4ef0340e765c8d2d15a1f98a = L.marker(
+                [-7.35536614, 109.9051099],
+                {}
+            ).addTo(marker_cluster_b8358a9f0516ade52e54581412497225);
+        
+    
+        var popup_bc22899eba5316084711c3edead6bf27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1810a1ec371eb3ea57753c3044bb349c = $(`<div id="html_1810a1ec371eb3ea57753c3044bb349c" style="width: 100.0%; height: 100.0%;">Kresna Hotel Wonosobo: Jl. Pasukan Ronggolawe No.30, Wonosobo Timur, Wonosobo Tim., Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56311</div>`)[0];
+                popup_bc22899eba5316084711c3edead6bf27.setContent(html_1810a1ec371eb3ea57753c3044bb349c);
+            
+        
+
+        marker_00efe43f4ef0340e765c8d2d15a1f98a.bindPopup(popup_bc22899eba5316084711c3edead6bf27)
+        ;
+
+        
+    
+    
+            var marker_c2e6b08716a7b104a6d0aaa52c0e1126 = L.marker(
+                [-7.364671954, 109.9015047],
+                {}
+            ).addTo(marker_cluster_b8358a9f0516ade52e54581412497225);
+        
+    
+        var popup_cdbaa4bb5c5452f3761ee237667f83f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f39e5143efcc767713adcba69bef3d93 = $(`<div id="html_f39e5143efcc767713adcba69bef3d93" style="width: 100.0%; height: 100.0%;">Front One Harvest Hotel Wonosobo: Jl. A. Yani No.98, Sumberan Selatan, Wonosobo Bar., Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56311</div>`)[0];
+                popup_cdbaa4bb5c5452f3761ee237667f83f5.setContent(html_f39e5143efcc767713adcba69bef3d93);
+            
+        
+
+        marker_c2e6b08716a7b104a6d0aaa52c0e1126.bindPopup(popup_cdbaa4bb5c5452f3761ee237667f83f5)
+        ;
+
+        
+    
+    
+            var marker_34b3eae6c90334a71c0bdcf26020bd8c = L.marker(
+                [-7.357190348, 109.9045085],
+                {}
+            ).addTo(marker_cluster_b8358a9f0516ade52e54581412497225);
+        
+    
+        var popup_0df04aae7f113ff3569146f1ed6174b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1bbe1a9fe29b6a9d934bee764e27d350 = $(`<div id="html_1bbe1a9fe29b6a9d934bee764e27d350" style="width: 100.0%; height: 100.0%;">SPOT ON 2829 Hotel Arjuna Syariah: Jl. Soekarno - Hatta No.7A, Wonosobo Timur, Wonosobo Tim., Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56311</div>`)[0];
+                popup_0df04aae7f113ff3569146f1ed6174b5.setContent(html_1bbe1a9fe29b6a9d934bee764e27d350);
+            
+        
+
+        marker_34b3eae6c90334a71c0bdcf26020bd8c.bindPopup(popup_0df04aae7f113ff3569146f1ed6174b5)
+        ;
+
+        
+    
+    
+            var marker_180b96b9af42ff5a1a7d920e85a654a0 = L.marker(
+                [-7.348869506, 109.906676],
+                {}
+            ).addTo(marker_cluster_b8358a9f0516ade52e54581412497225);
+        
+    
+        var popup_372dd92a70a37ba2bd005c2ac901af1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_153c508260f3ba811fe9033bcf0f0797 = $(`<div id="html_153c508260f3ba811fe9033bcf0f0797" style="width: 100.0%; height: 100.0%;">Hotel Dafam Wonosobo: Jl. Dieng No.38, Rowopeni, Kalianget, Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56319</div>`)[0];
+                popup_372dd92a70a37ba2bd005c2ac901af1d.setContent(html_153c508260f3ba811fe9033bcf0f0797);
+            
+        
+
+        marker_180b96b9af42ff5a1a7d920e85a654a0.bindPopup(popup_372dd92a70a37ba2bd005c2ac901af1d)
+        ;
+
+        
+    
+    
+            var marker_db3d9f07a9da048a7b45c5ea7c97d1d5 = L.marker(
+                [-7.365770674, 109.9013962],
+                {}
+            ).addTo(marker_cluster_b8358a9f0516ade52e54581412497225);
+        
+    
+        var popup_d65096fe03a6c8b42f7079c8104b8070 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c5dc5308743cc016bf5663dd412ecdc = $(`<div id="html_5c5dc5308743cc016bf5663dd412ecdc" style="width: 100.0%; height: 100.0%;">Hotel Parama: Jl. A. Yani No.112, Ngepelan, Wonosobo Bar., Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56311</div>`)[0];
+                popup_d65096fe03a6c8b42f7079c8104b8070.setContent(html_5c5dc5308743cc016bf5663dd412ecdc);
+            
+        
+
+        marker_db3d9f07a9da048a7b45c5ea7c97d1d5.bindPopup(popup_d65096fe03a6c8b42f7079c8104b8070)
+        ;
+
+        
+    
+    
+            var marker_f36be9d75f6af477cd67c974f37606e8 = L.marker(
+                [-7.367356076, 109.9013104],
+                {}
+            ).addTo(marker_cluster_b8358a9f0516ade52e54581412497225);
+        
+    
+        var popup_1858cdd9d987f0e64fe9fb926a0ff764 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4340a0726c53a6b3e1f8cdcd53584640 = $(`<div id="html_4340a0726c53a6b3e1f8cdcd53584640" style="width: 100.0%; height: 100.0%;">Hotel Surya Asia: JVJX+J97, Jl. A. Yani No.137, Wonosobo Timur, Wonosobo Tim., Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56311</div>`)[0];
+                popup_1858cdd9d987f0e64fe9fb926a0ff764.setContent(html_4340a0726c53a6b3e1f8cdcd53584640);
+            
+        
+
+        marker_f36be9d75f6af477cd67c974f37606e8.bindPopup(popup_1858cdd9d987f0e64fe9fb926a0ff764)
+        ;
+
+        
+    
+    
+            var marker_1e9e45c41aa891478f75be732c537eb4 = L.marker(
+                [-7.366632537, 109.9024798],
+                {}
+            ).addTo(marker_cluster_b8358a9f0516ade52e54581412497225);
+        
+    
+        var popup_75739019a811e01e3f91ef6ca1f89808 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed7499d5154e588c78e13b8a37b131da = $(`<div id="html_ed7499d5154e588c78e13b8a37b131da" style="width: 100.0%; height: 100.0%;">Cinnamon's Hotel Wonosobo: Jl. Veteran No.47, Wonosobo Timur, Wonosobo Tim., Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56317</div>`)[0];
+                popup_75739019a811e01e3f91ef6ca1f89808.setContent(html_ed7499d5154e588c78e13b8a37b131da);
+            
+        
+
+        marker_1e9e45c41aa891478f75be732c537eb4.bindPopup(popup_75739019a811e01e3f91ef6ca1f89808)
+        ;
+
+        
+    
+    
+            var marker_e3d621e960331f6c439cbce1e4726933 = L.marker(
+                [-7.364481094, 109.9021197],
+                {}
+            ).addTo(marker_cluster_b8358a9f0516ade52e54581412497225);
+        
+    
+        var popup_2aeff05f4409a9b24a3065a7e639446b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_729b33f4a0bc65d0044e208836ad625e = $(`<div id="html_729b33f4a0bc65d0044e208836ad625e" style="width: 100.0%; height: 100.0%;">Hotel Sri Kencono: Jl. A. Yani No.81, Wonosobo Timur, Wonosobo Tim., Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56311</div>`)[0];
+                popup_2aeff05f4409a9b24a3065a7e639446b.setContent(html_729b33f4a0bc65d0044e208836ad625e);
+            
+        
+
+        marker_e3d621e960331f6c439cbce1e4726933.bindPopup(popup_2aeff05f4409a9b24a3065a7e639446b)
+        ;
+
+        
+    
+    
+            var marker_b45d30fa84e07cbd69408c5c79fa06d7 = L.marker(
+                [-7.366587875, 109.9002636],
+                {}
+            ).addTo(marker_cluster_b8358a9f0516ade52e54581412497225);
+        
+    
+        var popup_d3f21b97b746e18a750e5f42f4d9bc29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40cedcd81bd0e13766b3f98384545011 = $(`<div id="html_40cedcd81bd0e13766b3f98384545011" style="width: 100.0%; height: 100.0%;">Hotel Dieng: Jl. Bhayangkara No.39, Ngepelan, Wonosobo Bar., Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56311</div>`)[0];
+                popup_d3f21b97b746e18a750e5f42f4d9bc29.setContent(html_40cedcd81bd0e13766b3f98384545011);
+            
+        
+
+        marker_b45d30fa84e07cbd69408c5c79fa06d7.bindPopup(popup_d3f21b97b746e18a750e5f42f4d9bc29)
+        ;
+
+        
+    
+    
+            var marker_43dc03f967f7cc9ca11c36d54374d13e = L.marker(
+                [-7.35167457, 109.9056094],
+                {}
+            ).addTo(marker_cluster_b8358a9f0516ade52e54581412497225);
+        
+    
+        var popup_6adbf89fac69590174ece4c2d3e3ea08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d30cca98d56b44c9d9f2bd1db9813153 = $(`<div id="html_d30cca98d56b44c9d9f2bd1db9813153" style="width: 100.0%; height: 100.0%;">Hotel Ikhwan Wonosobo: Jl. Dieng Jl. Pangeran Diponegoro No.12, Rowopeni, Wonosobo Tim., Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56311</div>`)[0];
+                popup_6adbf89fac69590174ece4c2d3e3ea08.setContent(html_d30cca98d56b44c9d9f2bd1db9813153);
+            
+        
+
+        marker_43dc03f967f7cc9ca11c36d54374d13e.bindPopup(popup_6adbf89fac69590174ece4c2d3e3ea08)
+        ;
+
+        
+    
+    
+            var marker_407f234c98b44b1b0e77c8a8532d2717 = L.marker(
+                [-7.368069634, 109.9011885],
+                {}
+            ).addTo(marker_cluster_b8358a9f0516ade52e54581412497225);
+        
+    
+        var popup_6097a9254fca2a2ab5516a0f00df3689 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_615c509c4d0642198a700d609832774a = $(`<div id="html_615c509c4d0642198a700d609832774a" style="width: 100.0%; height: 100.0%;">HOTEL SENTRO: Jl. A. Yani No.141, Wonosobo Timur, Wonosobo Tim., Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56311</div>`)[0];
+                popup_6097a9254fca2a2ab5516a0f00df3689.setContent(html_615c509c4d0642198a700d609832774a);
+            
+        
+
+        marker_407f234c98b44b1b0e77c8a8532d2717.bindPopup(popup_6097a9254fca2a2ab5516a0f00df3689)
+        ;
+
+        
+    
+    
+            var marker_0ac2b410e24285d742ec615ff87baebb = L.marker(
+                [-7.393676707, 109.8922966],
+                {}
+            ).addTo(marker_cluster_b8358a9f0516ade52e54581412497225);
+        
+    
+        var popup_866e1afaa18b178a27a6b5094b5d63a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9a0ad2b2641f2074d4285cac68042af = $(`<div id="html_a9a0ad2b2641f2074d4285cac68042af" style="width: 100.0%; height: 100.0%;">The Cabin Tanjung Hotel: Jl. Banyumas Km. 4 No.2, Wonorejo, Kec. Selomerto, Kabupaten Wonosobo, Jawa Tengah 56313</div>`)[0];
+                popup_866e1afaa18b178a27a6b5094b5d63a3.setContent(html_a9a0ad2b2641f2074d4285cac68042af);
+            
+        
+
+        marker_0ac2b410e24285d742ec615ff87baebb.bindPopup(popup_866e1afaa18b178a27a6b5094b5d63a3)
+        ;
+
+        
+    
+    
+            var marker_bc4b1bd385ffc1b54fe921336caaeb90 = L.marker(
+                [-7.366843634, 109.9196306],
+                {}
+            ).addTo(marker_cluster_b8358a9f0516ade52e54581412497225);
+        
+    
+        var popup_b366016ec3ee24d453d2e777b6ad7342 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ad36c673e5bef3f8b28f3517559562f = $(`<div id="html_3ad36c673e5bef3f8b28f3517559562f" style="width: 100.0%; height: 100.0%;">Homestay wonosobo: Jl. Lkr. Sel. No.18, Ngaglik, Pancurwening, Kec. Wonosobo, Kabupaten Wonosobo, Jawa Tengah 56316</div>`)[0];
+                popup_b366016ec3ee24d453d2e777b6ad7342.setContent(html_3ad36c673e5bef3f8b28f3517559562f);
+            
+        
+
+        marker_bc4b1bd385ffc1b54fe921336caaeb90.bindPopup(popup_b366016ec3ee24d453d2e777b6ad7342)
+        ;
+
+        
+    
+</script>
+</html>
